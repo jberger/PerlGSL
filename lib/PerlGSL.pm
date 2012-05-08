@@ -3,6 +3,9 @@ package PerlGSL;
 use strict;
 use warnings;
 
+our $VERSION = '0.001';
+$VERSION = eval $VERSION;
+
 use base 'Exporter';
 
 our %EXPORT_TAGS;
@@ -63,7 +66,7 @@ Be sane
 
 =head1 PerlGSL: The Standard Distribution
 
-Beyond defining a namespace, the C<PerlGSL> module is a central module for installing/loading the "Standard" PerlGSL modules. Installing L<PerlGSL> will install all of these modules. Loading L<PerlGSL> does nothing, however loading with a tag (e.g. C<use PerlGSL ':tag';>) will import certain functions from these modules. Those tags are:
+Beyond defining a namespace, the C<PerlGSL> module is a central module for installing/loading the "Standard" PerlGSL modules. Installing L<PerlGSL> will install all of these modules. Loading L<PerlGSL> does nothing, however loading with a tag (e.g. C<use PerlGSL ':tag';>) will import certain functions from these modules; the number in square brackets indicated the C<PerlGSL> version number that the module was added to the standard distribution. Those tags are:
 
 =over
 
@@ -73,7 +76,7 @@ Beyond defining a namespace, the C<PerlGSL> module is a central module for insta
 
 =item *
 
-C<int_multi> - from L<PerlGSL::Integration::MultiDim> 
+C<int_multi> - from L<PerlGSL::Integration::MultiDim> [standard since PerlGSL: 0.001]
 
 =back
 
