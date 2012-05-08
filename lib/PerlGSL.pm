@@ -34,13 +34,13 @@ L<PerlGSL> defines both a namespace (with certain goals) and a distribution. The
 
 The C<PerlGSL> distribution is primarily a concept, a namespace to put Perlish interfaces to the Gnu Scientific Library. The GSL provides a large number of C routines for doing scientific/mathematical calculations. To use the GSL from Perl you need to use a I<glue> module which interfaces Perl with the GSL. Perl/C interfaces can come in many flavors; some feel more like C (see L<Math::GSL>) while others strive to feel more like Perl. The C<PerlGSL> is meant to be namespace to collect such modules.
 
-Authors are encouraged to upload your modules to the C<PerlGSL> namespace. For consistency, please:
+Authors are encouraged to upload your modules to the C<PerlGSL> namespace. For consistency, please attempt to:
 
 =over 
 
 =item *
 
-Attempt to use a functional formalism if possible
+Use a functional formalism if possible
 
 =item *
 
@@ -56,7 +56,7 @@ Choose your module's name with care and consideration for future authors
 
 =item *
 
-Don't use the name of the library as the name of your module
+Don't use the name of the library as the name of your module. Using these names may make it hard for others to name interfaces to the same library. Unfortunately, this may be unavoidable in some cases. In other cases, the library name may be used by central modules to farm out computations to other modules. For example a L<PerlGSL::Integration> library is planned which will smartly farm out integration to the most appropriate solver (by dimensionality and complexity).
 
 =item *
 
@@ -76,7 +76,7 @@ Beyond defining a namespace, the C<PerlGSL> module is a central module for insta
 
 =item *
 
-C<int_multi> - from L<PerlGSL::Integration::MultiDim> [standard since PerlGSL: 0.001]
+C<int_multi> - from L<PerlGSL::Integration::MultiDim> [since 0.001]
 
 =back
 
@@ -86,7 +86,23 @@ loads all of the above functions.
 
 =back
 
+Note also that any of the individual functions may be imported by name.
+
 If you are an author and would like your module added to this central framework please file a GitHub issue.
+
+=head1 Future Goals
+
+=over
+
+=item * 
+
+Integrate L<PerlGSL> with L<Alien> to provide the GSL library via CPAN
+
+=item *
+
+Continue to add modules to the namespace and the "Stardard Distribution", eventually forming a well rounded GSL implementation.
+
+=back
 
 =head1 Other Perl GSL Bindings
 
