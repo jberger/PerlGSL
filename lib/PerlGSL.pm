@@ -93,7 +93,7 @@ L<PerlGSL> is by no means the only bindings for GSL available via CPAN. Its purp
 
 =item *
 
-L<PDL::GSL> - L<PDL> is a C-level matrix-like sublanguage for Perl. It is in the vein of MatLab or IDL. It has bindings to many of the GSL libraries. It is fast, but only as Perlish as PDL is itself.
+L<PDL::GSL|http://pdl.perl.org/?docs=Modules&title=PDL::Modules#gnu_scientific_library> - L<PDL> is a C-level matrix-like sublanguage for Perl. It is in the vein of MatLab or IDL. It has bindings to many of the GSL libraries. It is fast, but only as Perlish as PDL is itself.
 
 =item *
 
