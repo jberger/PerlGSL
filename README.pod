@@ -10,7 +10,7 @@ L<PerlGSL> defines both a namespace (with certain goals) and a distribution. The
 
 =head1 PerlGSL: The Namespace
 
-The name C<PerlGSL> is primarily a concept, a namespace in which to put Perlish interfaces to the Gnu Scientific Library. The GSL provides a large number of C routines for doing scientific/mathematical calculations. To use the GSL from Perl you need to use a I<glue> module which interfaces Perl with the GSL. Perl/C interfaces can come in many flavors; some feel more like C (see L<Math::GSL>) while others strive to feel more like Perl. C<PerlGSL> is meant to be a namespace to collect such modules.
+C<PerlGSL> is primarily a concept, a namespace in which to put Perlish interfaces to the Gnu Scientific Library. The GSL provides a large number of C routines for doing scientific/mathematical calculations. To use the GSL from Perl you need to use a I<glue> module which interfaces Perl with the GSL. Perl/C interfaces can come in many flavors; some feel more like C (see L<Math::GSL>) while others strive to feel more like Perl. C<PerlGSL> is meant to be a namespace to collect such modules.
 
 Authors are encouraged to upload your modules to the C<PerlGSL> namespace. For consistency, please attempt to:
 
@@ -44,7 +44,7 @@ Be sane
 
 =head1 PerlGSL: The Standard Distribution
 
-Beyond defining a namespace, the C<PerlGSL> module is a central module for installing/loading the "Standard" PerlGSL modules. Installing L<PerlGSL> will install all of these modules. Loading L<PerlGSL> does nothing, however loading with a tag (e.g. C<use PerlGSL ':tag';>) will import certain functions from these modules; the number in square brackets indicated the C<PerlGSL> version number that the module was added to the standard distribution. Those tags are:
+Beyond defining a namespace, the C<PerlGSL> module is a central module for installing/loading the "Standard" PerlGSL modules. Installing L<PerlGSL> will install all of the following modules. Loading L<PerlGSL> does nothing, however loading with a tag (e.g. C<use PerlGSL ':tag';>) will import certain functions from these modules; the number in square brackets indicated the C<PerlGSL> version number that the module was added to the standard distribution. Those tags are:
 
 =over 4
 
