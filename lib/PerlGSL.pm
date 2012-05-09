@@ -11,8 +11,9 @@ use base 'Exporter';
 our %EXPORT_TAGS;
 our @EXPORT_OK;
 
+use PerlGSL::Integration::SingleDim qw/int_1d/;
 use PerlGSL::Integration::MultiDim qw/int_multi/;
-$EXPORT_TAGS{'integration'} = [ qw/int_multi/ ];
+$EXPORT_TAGS{'integration'} = [ qw/int_1d int_multi/ ];
 
 push @EXPORT_OK, @$_ for values %EXPORT_TAGS;
 $EXPORT_TAGS{'all'} = \@EXPORT_OK;
@@ -76,6 +77,10 @@ Beyond defining a namespace, the C<PerlGSL> module is a central module for insta
 
 =item *
 
+C<int_1d> - from L<PerlGSL::Integration::SingleDim> [since 0.001]
+
+=item *
+
 C<int_multi> - from L<PerlGSL::Integration::MultiDim> [since 0.001]
 
 =back
@@ -86,7 +91,7 @@ loads all of the above functions.
 
 =back
 
-Note also that any of the individual functions may be imported by name.
+Note also that any of the individual functions may be imported individully by name.
 
 If you are an author and would like your module added to this central framework please file a GitHub issue.
 

@@ -54,6 +54,10 @@ Beyond defining a namespace, the C<PerlGSL> module is a central module for insta
 
 =item *
 
+C<int_1d> - from L<PerlGSL::Integration::SingleDim> [since 0.001]
+
+=item *
+
 C<int_multi> - from L<PerlGSL::Integration::MultiDim> [since 0.001]
 
 =back
@@ -64,7 +68,7 @@ loads all of the above functions.
 
 =back
 
-Note also that any of the individual functions may be imported by name.
+Note also that any of the individual functions may be imported individully by name.
 
 If you are an author and would like your module added to this central framework please file a GitHub issue.
 
