@@ -6,7 +6,7 @@ PerlGSL - A Collection of Perlish Interfaces to the Gnu Scientific Library
 
 =head1 DESCRIPTION
 
-L<PerlGSL> defines both a namespace (with certain goals) and a distribution. The aim is to flexibly and modulaly provide the GSL to Perl.
+L<PerlGSL> defines both a namespace (with certain goals) and a distribution. The aim is to flexibly and modularly provide the GSL to Perl.
 
 =head1 PerlGSL: The Namespace
 
