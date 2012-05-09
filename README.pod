@@ -10,7 +10,7 @@ L<PerlGSL> defines both a namespace (with certain goals) and a distribution. The
 
 =head1 PerlGSL: The Namespace
 
-The C<PerlGSL> distribution is primarily a concept, a namespace to put Perlish interfaces to the Gnu Scientific Library. The GSL provides a large number of C routines for doing scientific/mathematical calculations. To use the GSL from Perl you need to use a I<glue> module which interfaces Perl with the GSL. Perl/C interfaces can come in many flavors; some feel more like C (see L<Math::GSL>) while others strive to feel more like Perl. The C<PerlGSL> is meant to be namespace to collect such modules.
+The name C<PerlGSL> is primarily a concept, a namespace in which to put Perlish interfaces to the Gnu Scientific Library. The GSL provides a large number of C routines for doing scientific/mathematical calculations. To use the GSL from Perl you need to use a I<glue> module which interfaces Perl with the GSL. Perl/C interfaces can come in many flavors; some feel more like C (see L<Math::GSL>) while others strive to feel more like Perl. C<PerlGSL> is meant to be a namespace to collect such modules.
 
 Authors are encouraged to upload your modules to the C<PerlGSL> namespace. For consistency, please attempt to:
 
