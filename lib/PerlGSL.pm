@@ -11,6 +11,12 @@ use base 'Exporter';
 our %EXPORT_TAGS;
 our @EXPORT_OK;
 
+BEGIN {
+  if ( eval { use PerlGSL::DiffEq qw/ode_solver/; 1; } ) {
+    $EXPORT_TAGS{'diffeq'} = [ qw/ode_solver/ ];
+  }
+}
+
 use PerlGSL::Integration::SingleDim qw/int_1d/;
 use PerlGSL::Integration::MultiDim qw/int_multi/;
 $EXPORT_TAGS{'integration'} = [ qw/int_1d int_multi/ ];
