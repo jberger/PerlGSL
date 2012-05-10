@@ -62,6 +62,16 @@ C<int_multi> - from L<PerlGSL::Integration::MultiDim> [since 0.001]
 
 =back
 
+=item diffeq
+
+=over 4
+
+=item *
+
+C<ode_solver> - from L<PerlGSL::DiffEq> [since 0.001; requires GSL >= 1.15]
+
+=back
+
 =item all
 
 loads all of the above functions.
