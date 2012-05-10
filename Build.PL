@@ -23,7 +23,7 @@ my $build = Module::Build->new(
       'perl' => '5.008',
       parent => 0,
       'PerlGSL::Integration::SingleDim' => 0.001,
-      'PerlGSL::Integration::MultiDim' => 0.002,
+      'PerlGSL::Integration::MultiDim'  => 0.002,
       $can_diffeq ? ( 'PerlGSL::DiffEq' => 0.08 ) : (),
     },
     recommends => {
