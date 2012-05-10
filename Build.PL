@@ -10,13 +10,11 @@ my $can_diffeq = 0;
 if ( defined $gsl_version and $gsl_version >= 1.15 ) {
   $can_diffeq = 1;
 } else {
-  print "PerlGSL::DiffEq requires GSL version >= $min_gsl_version\n"
+  print "PerlGSL::DiffEq requires GSL version >= 1.15\n";
 }
 
 my $build = Module::Build->new(
-    module_name       => 'PerlGSL::DiffEq',
-    dist_version_from => 'lib/PerlGSL/DiffEq.pm',
-    dist_abstract     => 'A Collection of Perlish Interfaces to the GSL',
+    module_name       => 'PerlGSL',
     dist_author       => 'Joel Berger <joel.a.berger@gmail.com>',
     license           => 'perl',
     requires          => {
@@ -28,7 +26,7 @@ my $build = Module::Build->new(
     },
     recommends => {
       'PerlGSL::DiffEq' => 0.08,
-    }
+    },
     configure_requires => {
       'Module::Build' => 0.38,
     },
