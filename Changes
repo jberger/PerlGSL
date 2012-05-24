@@ -1,5 +1,8 @@
 Revision history for Perl module PerlGSL.
 
+0.002  May 24, 2012
+	- Added PerlGSL::RootFinding::SingleDim
+
 0.001  May 10, 2012
 	- Initial release
 

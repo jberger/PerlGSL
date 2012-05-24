@@ -4,7 +4,7 @@
       "Joel Berger <joel.a.berger@gmail.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.3901, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -30,8 +30,9 @@
          },
          "requires" : {
             "PerlGSL::DiffEq" : "0.08",
-            "PerlGSL::Integration::MultiDim" : "0.002",
-            "PerlGSL::Integration::SingleDim" : "0.001",
+            "PerlGSL::Integration::MultiDim" : "0.003",
+            "PerlGSL::Integration::SingleDim" : "0.002",
+            "PerlGSL::RootFinding::SingleDim" : "0.001",
             "parent" : "0",
             "perl" : "5.008"
          }
@@ -40,7 +41,7 @@
    "provides" : {
       "PerlGSL" : {
          "file" : "lib/PerlGSL.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -55,5 +56,5 @@
          "url" : "http://github.com/jberger/PerlGSL"
       }
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }

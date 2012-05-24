@@ -3,7 +3,7 @@ package PerlGSL;
 use strict;
 use warnings;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 $VERSION = eval $VERSION;
 
 use base 'Exporter';
@@ -17,9 +17,12 @@ BEGIN {
   }
 }
 
-use PerlGSL::Integration::SingleDim 0.001 qw/int_1d/;
-use PerlGSL::Integration::MultiDim 0.002 qw/int_multi/;
+use PerlGSL::Integration::SingleDim 0.002 qw/int_1d/;
+use PerlGSL::Integration::MultiDim 0.003 qw/int_multi/;
 $EXPORT_TAGS{'integration'} = [ qw/int_1d int_multi/ ];
+
+use PerlGSL::RootFinding::SingleDim 0.001 qw/findroot_1d/;
+$EXPORT_TAGS{'root_finding'} = [ qw/findroot_1d/ ];
 
 push @EXPORT_OK, @$_ for values %EXPORT_TAGS;
 $EXPORT_TAGS{'all'} = \@EXPORT_OK;
@@ -88,6 +91,16 @@ C<int_1d> - from L<PerlGSL::Integration::SingleDim> [since 0.001]
 =item *
 
 C<int_multi> - from L<PerlGSL::Integration::MultiDim> [since 0.001]
+
+=back
+
+=item root_finding
+
+=over
+
+=item *
+
+C<findroot_1d> - from L<PerlGSL::RootFinding::SingleDim> [since 0.002]
 
 =back
 

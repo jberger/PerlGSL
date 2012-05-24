@@ -20,8 +20,9 @@ my $build = Module::Build->new(
     requires          => {
       'perl' => '5.008',
       parent => 0,
-      'PerlGSL::Integration::SingleDim' => 0.001,
-      'PerlGSL::Integration::MultiDim'  => 0.002,
+      'PerlGSL::Integration::SingleDim' => 0.002,
+      'PerlGSL::Integration::MultiDim'  => 0.003,
+      'PerlGSL::RootFinding::SingleDim' => 0.001,
       $can_diffeq ? ( 'PerlGSL::DiffEq' => 0.08 ) : (),
     },
     recommends => {
